@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var fruit=prompt("좋아하는 과일을 입력하세요. (키위,레몬,오렌지,탄제린)","키위");
+var message = "";
+switch(fruit){ //조건식
+case "키위":
+	message="키위를 좋아하시네요."; img="kiwi.jpg"; break;
+case "레몬":
+	message="레몬을 좋아하시네요."; img="lemon.jpg"; break;
+case "오렌지":
+	message="가을을 좋아하시네요."; img="orange.jpg"; break;
+case "탄제린":
+	message="탄제린을 좋아하시네요."; img="tangerine.jpg"; break;
+default: alert("잘못 입력하셨네요.");
+}
+document.write("<h2>"+message+"</h2>");
+// .. 상위디렉토리 . 현재디렉토리
+document.write("<img src='../images/"+img+"'>");
+</script>
+</head>
+<!-- #rrggbb : 00~ff(255) -->
+<body bgcolor="#d7f1d7">
+
+</body>
+</html>
