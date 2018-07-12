@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 id="title">마우스 이벤트</h1>
+	<a href="#" id="btn"><img src="../images/kiwi.jpg"></a>
+	<p id="img_src"></p>
+	<script>
+		var btn = document.getElementById("btn"); //a태그
+		var s = document.getElementById("img_src"); //p태그
+		//자바스크립트 코드로 이벤트 등록
+		btn.onmouseover=function(){
+			document.getElementById("title").innerHTML="마우스 오버";
+			btn.firstChild.src="../images/lemon.jpg";
+			s.innerHTML=btn.firstChild.src;
+		}
+		btn.onmouseout=function(){
+			document.getElementById("title").innerHTML="마우스 아웃";
+			btn.firstChild.src="../images/orange.jpg";
+			s.innerHTML=btn.firstChild.src;
+		}
+	</script>
+</body>
+</html>
